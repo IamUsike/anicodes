@@ -2,10 +2,10 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
 
 const developers = [
-  { name: "Kunal Agrawal", designation: "Team Leader", role: "Backend Developer", linkedin: "https://www.linkedin.com/in/kunalragrawal", github: "kunalagra" },
-  { name: "Deexith Madas", designation: "Team Member", role: "Backend Developer", linkedin: "https://www.linkedin.com/in/deexith-madas", github: "MDeexith" },
-  { name: "Aman Tiwari", designation: "Team Member", role: "Frontend Developer", linkedin: "https://www.linkedin.com/in/aman-tiwari03", github: "amant03" },
-  { name: "Ganesh Utla", designation: "Team Member", role: "Frontend Developer", linkedin: "https://www.linkedin.com/in/ganesh-utla-888abc", github: "ganesh-utla" },
+  { name: "Anirudh", designation: "Team Leader", role: "Backend Developer", linkedin: "https://www.linkedin.com/in/kunalragrawal", github: "" },
+  { name: "Anirush Pro", designation: "Team Member", role: "Backend Developer", linkedin: "https://www.linkedin.com/in/deexith-madas", github: "MDeexith" },
+  { name: "Anirush X", designation: "Team Member", role: "Frontend Developer", linkedin: "https://www.linkedin.com/in/aman-tiwari03", github: "amant03" },
+  { name: "Anirudh nani ga suki", designation: "Team Member", role: "Frontend Developer", linkedin: "https://www.linkedin.com/in/ganesh-utla-888abc", github: "ganesh-utla" },
 ];
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
             </div>
             <img
               src='/logo.png'
-              alt='codegamy_logo'
+              alt='anicodes_logo'
               className='w-80 h-80 max-sm:w-64 max-sm:h-64 max-xs:w-48 max-xs:h-48 object-contain'
             />
           </div>

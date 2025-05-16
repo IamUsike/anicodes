@@ -48,11 +48,11 @@ export default function LoginPage() {
       <Link href='/' className='flex justify-center items-center mb-12 gap-5'>
         <img
           src='/logo.png'
-          alt='codegamy_logo'
+          alt='anicodes_logo'
           className='w-14 h-14 object-contain'
         />
         <h2 className='font-bold text-3xl'>
-          CODEGAMY
+         ANICODES 
         </h2>
       </Link>
       <form className="block mx-auto w-full max-w-[400px] px-2" onSubmit={isLogin? handleLogin : handleRegister}>

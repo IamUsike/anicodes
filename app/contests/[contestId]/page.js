@@ -76,9 +76,9 @@ const page = () => {
           <ul>
             <li>There will be four problems in the contest and each will have its own difficulty level.</li>
             <li>The penalty time of 5 minutes will be applied for each wrong submission.</li>
-            <li>To ensure the fairness of the contest, Codegamy will hide some
+            <li>To ensure the fairness of the contest, Anicodes will hide some
               test cases during the contest. When users submit incorrect
-              submissions, Codegamy will not show the hidden test cases to the
+              submissions, Anicodes will not show the hidden test cases to the
               users.</li>
             <li>The final rating of this contest will be updated within 5 working
               days after the contest.</li>
