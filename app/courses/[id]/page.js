@@ -20,7 +20,6 @@ const page = () => {
 
   async function fetchCourseData() {
     const res = await fetch(`/api/courses`);
-    console.log(res, "resulr derom courses");
     const data = await res.json();
     return data;
   }
