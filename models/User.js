@@ -11,4 +11,5 @@ const UserSchema = new Schema({
 }, {timestamps: true});
 
 
+    // totalpoints: { type: Number, default:0 ,select:false },
 export const User = models?.User || model('User', UserSchema);

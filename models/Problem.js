@@ -26,6 +26,8 @@ const ProblemSchema = Schema({
     companies: {type: [String], default: []},
     starterCode: {type: String},
     difficulty: { type: String, enum: ['Easy', 'Medium', 'Hard'], default: 'Easy'},
+    // totalpoints: { type: Number, default:0 ,select:false },
+    points: { type:Number, enum:['1','2','3'],default:1},
     solution: {type: String},
     videoId: {type: String},
     testCases: [{
@@ -35,3 +37,4 @@ const ProblemSchema = Schema({
   });
   
 export const Problem = models?.Problem || model('Problem', ProblemSchema);
+export const UserPoints = models?.UserPoints || model('UserPoints',UserPointsSchema)
