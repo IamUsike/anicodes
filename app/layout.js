@@ -1,7 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
-import Script from "next/script"; // ✅ Import Script
+import GeminiChatWidget from "@/components/shared/GeminiChatWidget"; 
 
 export const metadata = {
   title: "Anicodes - Your Coding Ground",
@@ -16,34 +16,9 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
 
-        {/* ✅ Chatbase Chatbot Script */}
-        <Script id="chatbase-bot" strategy="lazyOnload">
-          {`
-            (function(){
-              if(!window.chatbase || window.chatbase("getState") !== "initialized"){
-                window.chatbase = (...arguments) => {
-                  if(!window.chatbase.q){ window.chatbase.q = []; }
-                  window.chatbase.q.push(arguments);
-                };
-                window.chatbase = new Proxy(window.chatbase, {
-                  get(target, prop) {
-                    if(prop === "q"){ return target.q; }
-                    return (...args) => target(prop, ...args);
-                  }
-                });
-              }
-              const onLoad = function(){
-                const script = document.createElement("script");
-                script.src = "https://www.chatbase.co/embed.min.js";
-                script.id = "-MdXJHjn0EcpWO0QzzNuv"; // ✅ Replace with your bot ID if needed
-                script.domain = "www.chatbase.co";
-                document.body.appendChild(script);
-              };
-              if(document.readyState === "complete"){ onLoad(); }
-              else { window.addEventListener("load", onLoad); }
-            })();
-          `}
-        </Script>
+        {/* ✅ Placeholder for Gemini Chat Widget */}
+        {/* This component will handle the UI and communication with your Gemini API backend */}
+        <GeminiChatWidget />
       </body>
     </html>
   );
